@@ -1,27 +1,46 @@
 .container {
     width: 100%;
-    margin-left:  50%;
 }
 
 .divContainer {
     width: 50%;
     border: 1px solid black;
+    border-radius: 10px;
     text-align: center;
+    margin-left: 25%;
+    background-color: rgba(100,107,92,0.25);
+    margin-top: 20px;
 }
 
 .block {
     width: 100%;
-    height: 50%;
     display: flex;
+    justify-content: center;
+}
+
+.block > h2 {
+    background-color: aqua;
 }
 
 .aLink {
-    width: 50%%;
+    width: 100%;
+    height: 50px;
+}
+
+.aInBox {
+    width: 100%;
     height: 50px;
 }
 
 .link {
-    width: 70%;
-    height: 50px;
+    padding: 10px 12.5%;
+    background-color: red;
     border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.link:hover {
+    background-color: orange;
+
 }

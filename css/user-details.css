@@ -1,0 +1,54 @@
+.divContainer {
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.contOfBtn {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: red;
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.post {
+    width: 20%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.btnPost {
+    background-color: red;
+    border-radius: 10px;
+    width: 50%;
+    height: 30px;
+}
+
+.btnPost:hover {
+    background-color: orange;
+}
+
+.box {
+    background-color: orange;
+}

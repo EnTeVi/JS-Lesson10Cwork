@@ -30,6 +30,7 @@ function postUs(item, box) {
 }
 
 let postBox = document.createElement('div');
+postBox.className = 'postBox';
 document.body.appendChild(postBox);
 postUs(postDate, postBox);
 
@@ -38,6 +39,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postDate.id}/comments`)
     .then(value => value.json())
     .then(posts => {
         let comCon = document.createElement('div');
+        comCon.className = 'comCon';
         document.body.appendChild(comCon);
         for (let post of posts) {
             let newCom = document.createElement('div');

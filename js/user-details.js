@@ -34,6 +34,7 @@ function renderObj(obj, container) {
 }
 
 let divContainer = document.createElement('div');
+divContainer.className = 'divContainer';
 document.body.appendChild(divContainer);
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
@@ -48,15 +49,19 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
 
 
+let contOfBtn = document.createElement('div');
+contOfBtn.className = 'contOfBtn';
 let button = document.createElement('button');
 button.innerText = 'Post of current user';
 button.className = 'btn';
-document.body.appendChild(button);
+contOfBtn.appendChild(button);
+document.body.appendChild(contOfBtn);
 
 
 button.addEventListener('click', loadPost);
 
 let cont = document.createElement('div');
+cont.className = 'cont';
 document.body.appendChild(cont);
 
 function loadPost() {
@@ -76,6 +81,7 @@ function loadPost() {
 
                 let btnPost = document.createElement('button');
                 btnPost.innerText = 'Post detalis';
+                btnPost.className = 'btnPost';
                 newPost.appendChild(btnPost);
 
                 btnPost.addEventListener('click', (event) => {

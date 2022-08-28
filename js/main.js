@@ -22,6 +22,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
     let aLink = document.createElement('div');
     aLink.className = 'aLink';
     let a = document.createElement('a');
+    let aInBox = document.createElement('div');
+    aInBox.className = 'aInBox';
 
     divElementId.innerText = `${user.id} -`;
     divElementName.innerText = `- ${user.name}`;
@@ -30,7 +32,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
     a.href = `user-details.html?id=${user.id}`;
 
     divCont.append(block, aLink);
-    aLink.appendChild(a);
+    aLink.appendChild(aInBox);
+    aInBox.appendChild(a);
     divCont.className = 'divContainer';
     block.append(divElementId, divElementName);
     block.className = 'block';
